@@ -1,0 +1,707 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/cork-wallet.png");
+}
+
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+h2, h3 {
+	color: #4aaaa5;
+}
+
+footer {
+	height: 50px;
+	width: 100%;
+	background-color: #666666;
+	position: fixed; /* make it sticky */
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	border-top: 5px solid #4aaaa5;
+	color: #ffffff;
+}
+p.copyright {
+	padding-top: 15px;
+}
+
+/* smallest resolution */
+@media screen and (max-width: 640px) {
+	
+header.header {
+	/* height: 50px; */
+	height: 120px;
+	/* I didn't use boder-box so tweak here to
+	 with eyeballing using chrome tool */
+	width: 715px;	
+	background-color: #ffffff;
+	border-bottom: 3px solid #cccccc;
+	/* padding-top: 10px;
+	margin-bottom: 5px;
+	overflow: auto;
+	clear: both;
+	*/
+	margin: 0;
+	padding: 0;
+}
+h1#name {
+	height: 50px;
+	width: 100%;
+	background-color: #4aaaa5;
+	color: white;
+	text-align: center;
+	padding-top: 16px;
+	font-size: 24px;
+	/* float: left; */
+}
+
+nav.links {
+	clear: left;
+	height: 50px;
+	width: 100%;
+	background-color: #ffffff;
+	color: #cccccc;
+	font-size: 18px;
+	margin: 0;
+	
+}
+
+ul  {
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+ul.menu {
+	    margin-top: 20px;
+}
+li {
+	display: inline-block;
+}
+li a#h-about, li a#h-portfolio, li a#h-contact {
+		text-decoration: none;
+		width: 80px;
+}
+
+a#h-about, a#h-portfolio {
+	padding-right: 15px;
+	border-right: 2px solid #cccccc;
+}
+a#h-about {
+	padding-left: 242px;
+}
+a#h-portfolio, a#h-contact {
+	padding-left: 15px;
+}
+
+
+
+section.content, section.content-portfolio {
+	margin-top: 5px;
+	width: 640px;
+	padding: 0;
+	margin-left: 10%;
+	/* overflow: auto; */
+
+}
+section.content {
+	height: 500px;
+}
+section.content-portfolio {
+	height: 800px;
+}
+
+/* This section is specific to index.html */
+article.about-self, section.contact-form, section.portfolio-all {
+	width: 590px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 5px solid #dddddd;
+	
+	background-color: #ffffff;
+
+	margin-right: 20px;
+	padding-top: 26px;
+
+	/* float: left; */
+}
+article.about-self {
+	margin-top: 15px;
+}
+header#about-me {
+	width: 600px;
+	height: 50px;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+
+}
+section.introduction {
+	width: 94%;
+	height: 80%;
+	margin-top: 5px;
+	/* overflow: auto; */
+}
+img#me {
+	/* height: 100px; */
+	width: 600px;
+	height: 500px;
+	/* float: left; */
+	display: block;
+	margin-right: 5px;
+}
+/* --- end of index.html specifics --- */
+aside {
+	width: 600px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 200px;
+	background-color: #ffffff;
+	border: 5px solid #dddddd;
+	/* float: left; */
+	padding-top: 10px;
+
+}
+
+header#contact-with-me {
+	width: 600px;
+	height: 30px;
+	border-bottom: 3px solid #cccccc;
+	font-size: 20px;
+
+}
+nav.social-links {
+	width:94%;
+	padding-top: 20px;
+}
+
+a#linkedin, a#stack-overflow {
+	padding-left: 12px;
+}
+
+
+/* This section is specific to contact.html */
+
+header#contact {
+	width: 94%;
+	height: 50px;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+section.contact-form {
+	margin-top: 15px;
+}
+form.contact-info {
+	color: #cccccc;
+	line-height: 1.5;
+	padding-top: 10px;
+}
+/* change input fields and submit button features */
+.contact-info input[type="text"], .contact-info input[type="email"]{
+	border: 1px solid #cccccc;
+	width: 93%;
+	height: 40px;
+}
+.contact-info textarea {
+	border: 1px solid #cccccc;
+	width: 93%;
+}
+.contact-info input[type="submit"] {
+	background-color: #4aaaa5;
+	border: none;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 10px 20px; /* original 2px 6px 2px */
+}
+
+/* end of contact.html specifics */
+
+/* This section is specific to portfolio.html */
+section.portfolio-all {
+	margin-top: 15px;
+}
+header#portfolio {
+	width: 94%;
+	height: 50px;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+
+section.portfolio-images {
+	/* overflow: auto; */
+	padding-top: 20px;
+}
+
+ul.portfolio-img-caption li {
+	display: inline;
+}
+a.image {
+	/* Don't know why small jpg's
+	doesn't fill up the box */
+	display: block;
+	height: 200px;
+	width: 500px;
+	padding: 25px;
+	position: relative;
+
+
+} 
+h4.caption {
+	height: 40px;
+	width: 220px;
+	position: absolute;
+	left: 25px;
+	bottom: 65px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* end of portfolio.html specifics */
+
+	
+
+}
+/* ===== between 641px and 768 px */
+@media screen and (min-width: 641px) {
+header {
+	height: 50px;
+	width: 850px;
+	background-color: #ffffff;
+	border-bottom: 3px solid #cccccc;
+	padding-top: 10px;
+	margin-bottom: 5px;
+	overflow: auto;
+	clear: both;
+}
+h1#name {
+	height: 50px;
+	width: 150px;
+	background-color: #4aaaa5;
+	color: white;
+	text-align: center;
+	margin-left: 10%;
+	padding-top: 16px;
+	float: left;
+}
+
+nav.links {
+	height: 100%;
+	width: 200px;
+	background-color: #ffffff;
+	color: #cccccc;
+	float: right;
+	font-size: 14px;
+	padding-top: 10px;
+	
+}
+
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	display: inline-block;
+
+}
+li a#h-about, li a#h-portfolio, li a#h-contact {
+		text-decoration: none;
+		width: 40px;
+}
+a#h-about, a#h-portfolio {
+	padding-right: 8px;
+	border-right: 2px solid #cccccc;
+}
+a#h-portfolio, a#h-contact {
+	padding-left: 8px;
+}
+
+
+
+section.content, section.content-portfolio {
+	margin-top: 20px;
+	width: 960px;
+	padding: 0;
+	margin-left: 10%;
+	/* overflow: auto; */
+
+}
+section.content {
+	height: 500px;
+}
+section.content-portfolio {
+	height: 800px;
+}
+
+/* This section is specific to index.html */
+article.about-self, section.contact-form, section.portfolio-all {
+	width: 718px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 5px solid #dddddd;
+	height: 90%;
+	background-color: #ffffff;
+
+	margin-right: 20px;
+	padding-top: 26px;
+
+	/* float: left; */
+}
+header#about-me {
+	width: 94%;
+	height: 15%;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+
+}
+section.introduction {
+	width: 94%;
+	height: 400px;
+	margin-top: 5px;
+	/* overflow: auto; */
+}
+img#me {
+	height: 100px;
+	width: 100px;
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+/* --- end of index.html specifics --- */
+aside {
+	width: 728px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 200px;
+	background-color: #ffffff;
+	border: 5px solid #dddddd;
+	/* float: left; */
+	padding-top: 10px;
+
+}
+
+header#contact-with-me {
+	width: 600px;
+	height: 30px;
+	border-bottom: 3px solid #cccccc;
+	font-size: 20px;
+
+}
+nav.social-links {
+	width:94%;
+	padding-top: 20px;
+}
+
+a#linkedin, a#stack-overflow {
+	padding-left: 12px;
+}
+
+
+/* This section is specific to contact.html */
+
+header#contact {
+	width: 94%;
+	height: 8%;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+
+form.contact-info {
+	
+	color: #cccccc;
+	line-height: 1.5;
+	padding-top: 10px;
+}
+/* change input fields and submit button features */
+.contact-info input[type="text"], .contact-info input[type="email"]{
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	width: 93%;
+	height: 40px;
+}
+.contact-info textarea {
+	border-color: #cccccc;
+	border-width: 1px;
+	width: 93%;
+
+}
+.contact-info input[type="submit"] {
+	background-color: #4aaaa5;
+	border: none;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 10px 20px; /* original 2px 6px 2px */
+}
+
+/* end of contact.html specifics */
+
+/* This section is specific to portfolio.html */
+
+header#portfolio {
+	width: 94%;
+	height: 8%;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+
+section.portfolio-images {
+	overflow: auto;
+	padding-top: 20px;
+}
+/* <ul> and <li> are defined in the beginning */
+a.image {
+	height: 220px;
+	width: 260px;
+	padding: 25px;
+	position: relative;
+
+
+} 
+h4.caption {
+	height: 40px;
+	width: 220px;
+	position: absolute;
+	left: 25px;
+	bottom: 45px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* end of portfolio.html specifics */
+
+}
+/* ===== Larger than 769px  ===== */
+@media screen and (min-width: 769px) {
+
+header {
+	height: 50px;
+	width: 100%;
+	background-color: #ffffff;
+	border-bottom: 3px solid #cccccc;
+	padding-top: 10px;
+	margin-bottom: 5px;
+	overflow: auto;
+	clear: both;
+}
+h1#name {
+	height: 50px;
+	width: 150px;
+	background-color: #4aaaa5;
+	color: white;
+	text-align: center;
+	margin-left: 10%;
+	padding-top: 16px;
+	float: left;
+}
+/*
+.blank {
+	height: 100%;
+	width: 550px;
+	float: left;
+}
+*/
+nav.links {
+	height: 100%;
+	width: 200px;
+	background-color: #ffffff;
+	color: #cccccc;
+	float: right;
+	font-size: 14px;
+	padding-top: 10px;
+	
+}
+
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	display: inline-block;
+
+}
+li a#h-about, li a#h-portfolio, li a#h-contact {
+		text-decoration: none;
+		width: 40px;
+}
+a#h-about, a#h-portfolio {
+	padding-right: 8px;
+	border-right: 2px solid #cccccc;
+}
+a#h-portfolio, a#h-contact {
+	padding-left: 8px;
+}
+
+
+
+section.content, section.content-portfolio {
+	margin-top: 20px;
+	width: 960px;
+	padding: 0;
+	margin-left: 10%;
+	/* overflow: auto; */
+
+}
+section.content {
+	height: 500px;
+}
+section.content-portfolio {
+	height: 800px;
+}
+
+/* This section is specific to index.html */
+article.about-self, section.contact-form, section.portfolio-all {
+	width: 590px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 5px solid #dddddd;
+	height: 90%;
+	background-color: #ffffff;
+
+	margin-right: 20px;
+	padding-top: 26px;
+
+	float: left;
+}
+header#about-me {
+	width: 94%;
+	height: 15%;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+
+}
+section.introduction {
+	width: 94%;
+	height: 80%;
+	margin-top: 5px;
+	overflow: auto;
+}
+img#me {
+	height: 100px;
+	width: 100px;
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+/* --- end of index.html specifics --- */
+aside {
+	width: 230px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 200px;
+	background-color: #ffffff;
+	border: 5px solid #dddddd;
+	float: left;
+	padding-top: 10px;
+
+}
+
+header#contact-with-me {
+	width: 94%;
+	height: 25%;
+	border-bottom: 3px solid #cccccc;
+	font-size: 20px;
+
+}
+nav.social-links {
+	height: 70%;
+	width:94%;
+	padding: 10%;
+}
+
+a#linkedin, a#stack-overflow {
+	padding-left: 12px;
+}
+
+
+/* This section is specific to contact.html */
+
+header#contact {
+	width: 94%;
+	height: 8%;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+
+form.contact-info {
+	
+	color: #cccccc;
+	line-height: 1.5;
+	padding-top: 10px;
+}
+/* change input fields and submit button features */
+.contact-info input[type="text"], .contact-info input[type="email"]{
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	width: 93%;
+	height: 40px;
+}
+.contact-info textarea {
+	border-color: #cccccc;
+	border-width: 1px;
+	width: 93%;
+
+}
+.contact-info input[type="submit"] {
+	background-color: #4aaaa5;
+	border: none;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 10px 20px; /* original 2px 6px 2px */
+}
+
+/* end of contact.html specifics */
+
+/* This section is specific to portfolio.html */
+
+header#portfolio {
+	width: 94%;
+	height: 8%;
+	border-bottom: 3px solid #cccccc;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+
+section.portfolio-images {
+	overflow: auto;
+	padding-top: 20px;
+}
+/* <ul> and <li> are defined in the beginning */
+a.image {
+	height: 220px;
+	width: 260px;
+	padding: 25px;
+	position: relative;
+
+
+} 
+h4.caption {
+	height: 40px;
+	width: 220px;
+	position: absolute;
+	left: 25px;
+	bottom: 45px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* end of portfolio.html specifics */
+
+} /* -------------- */
+
